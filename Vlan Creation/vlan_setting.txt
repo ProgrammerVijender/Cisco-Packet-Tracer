@@ -1,0 +1,97 @@
+>en
+>config t
+Switch(config)#  Vlan 10 
+Switch(config - Vlan ) #  name office
+exit
+
+Vlan 20
+Name home
+Exit
+
+Interface FastEthernet 0/1
+Switchport access vlan 20
+Exit
+
+
+
+Auto command of CLI
+
+Switch(config)#vlan 10 
+Switch(config-vlan)#name vlan10
+Switch(config-vlan)#name office
+Switch(config-vlan)#exit
+Switch(config)#vlan 20
+Switch(config-vlan)#name Home
+Switch(config-vlan)#exit
+Switch(config)#inter
+Switch(config)#interface fast
+Switch(config)#interface fastEthernet 0
+Switch(config)#interface fastEthernet 0/1 
+Switch(config-if)#switchport access vlan 10
+Switch(config-if)#exit
+Switch(config)#interface fastEthernet 0/2 to 0/5
+                                          ^
+% Invalid input detected at '^' marker.
+	
+Switch(config)#interface range fas
+Switch(config)#interface range fastEthernet 0/2 to 5
+                                                ^
+% Invalid input detected at '^' marker.
+	
+Switch(config)#interface range fastEthernet 0/2 - 5
+Switch(config-if-range)#switchport access vlan 20
+Switch(config-if-range)#exit
+Switch(config)#interface fastEthernet 0/1 
+%LINK-3-UPDOWN: Interface FastEthernet0/2, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to down
+
+%LINK-5-CHANGED: Interface FastEthernet0/2, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to up
+
+Switch(config-if)#show ip interface b
+Switch(config-if)#show ip interface b
+                    ^
+% Invalid input detected at '^' marker.
+	
+Switch(config-if)#show ip interface brief
+                    ^
+% Invalid input detected at '^' marker.
+	
+Switch(config-if)#exity
+                      ^
+% Invalid input detected at '^' marker.
+	
+Switch(config-if)#exit
+Switch(config)#show ip interface brief
+                ^
+% Invalid input detected at '^' marker.
+	
+Switch(config)#exit
+Switch#show ip in
+Switch#show ip interface b
+Switch#show ip interface brief 
+Interface              IP-Address      OK? Method Status                Protocol 
+FastEthernet0/1        unassigned      YES manual up                    up 
+FastEthernet0/2        unassigned      YES manual up                    up 
+FastEthernet0/3        unassigned      YES manual down                  down 
+FastEthernet0/4        unassigned      YES manual down                  down 
+FastEthernet0/5        unassigned      YES manual down                  down 
+FastEthernet0/6        unassigned      YES manual down                  down 
+FastEthernet0/7        unassigned      YES manual down                  down 
+FastEthernet0/8        unassigned      YES manual down                  down 
+FastEthernet0/9        unassigned      YES manual down                  down 
+FastEthernet0/10       unassigned      YES manual down                  down 
+FastEthernet0/11       unassigned      YES manual down                  down 
+FastEthernet0/12       unassigned      YES manual down                  down 
+FastEthernet0/13       unassigned      YES manual down                  down 
+FastEthernet0/14       unassigned      YES manual down                  down 
+FastEthernet0/15       unassigned      YES manual down                  down 
+FastEthernet0/16       unassigned      YES manual down                  down 
+FastEthernet0/17       unassigned      YES manual down                  down 
+FastEthernet0/18       unassigned      YES manual down                  down 
+FastEthernet0/19       unassigned      YES manual down                  down 
+FastEthernet0/20       unassigned      YES manual down                  down 
+FastEthernet0/21       unassigned      YES manual down                  down 
+ --More-- 
